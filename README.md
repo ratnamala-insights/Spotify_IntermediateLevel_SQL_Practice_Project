@@ -80,29 +80,28 @@ Select count(distinct(artist)) as disinct_artists
 from Spotify;
 ```
 **How many Albums we have?**
-
+```sql
 Select count(distinct(Album)) as no_Albums
 from Spotify;
-
+```
 **Different types of Albums**
-
+```sql
 Select count(distinct(Album_type))
 from Spotify;
 
 Select distinct(Album_type)
 from Spotify;
-
+```
 **Select Maximum duration song**
-
+```sql
 Select max(Duration_min) as Max_duration
 from Spotify;
-
+```
 **Select Minimum duration song**
-
+```sql
 Select min(Duration_min) as Min_duration
 from Spotify; -- here the Min duration is 0 hence this is wrong
 
-```sql
 Select 
 *
 from Spotify
